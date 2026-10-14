@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7a7878;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+/*fundo popup*/
+#popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/*janela cenário*/
+.popup-content {
+    width: 550px;
+/*     max-width: 80%;
+ */    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    text-align: left;
+    color: black;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/*botão fechar*/
+.popup-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    background: #222;
+    color: white;
+}
+
+.popup-content button:hover {
+    background-color: #f1f5f9;
+    color:#0f172a;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, minmax(180px, auto));
+    gap: 20px;
+    width: 100%;
+/*     max-width: 1000px;*/
+}
+
+.grid-cell {
+    background-color: #ffffff;
+    border: 2px #cbd5e1;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+/*botão célula*/
+.grid-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: #0f172a;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid #0f172a;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.grid-btn:hover {
+    background-color: #f1f5f9;
+    color:#0f172a;
+}
+
+.grid-btn:active {
+    transform: translateY(0);
+}
+
+.rodape {
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+
+    color: #ffffff;
+}
