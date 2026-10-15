@@ -92,6 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 100%;
 }
 
 .col-texto h2 {
@@ -153,4 +154,12 @@ body {
     width: auto;
     flex-shrink: 0;
     object-fit: contain;
+}
+
+.imagens-no-texto {
+    margin-bottom: auto;        /* Empurra as imagens para encostarem ao fundo */
+    display: flex;
+    flex-direction: column;  /* Coloca o bloco 1 em cima do bloco 2 */
+    justify-content: space-between; /* Distribui o espaço entre a primeira e a segunda linha */
+    gap: 24px;               /* Espaçamento vertical entre as duas linhas de imagens */
 }

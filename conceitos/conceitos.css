@@ -103,6 +103,11 @@ body {
     text-align: justify;
 }
 
+.col-texto a {
+    text-decoration: none;
+    color: #0f172a;
+}
+
 .col-imagens {
     display: flex;
     flex-direction: column;
