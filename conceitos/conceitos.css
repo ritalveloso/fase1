@@ -93,6 +93,10 @@ body {
     
 }
 
+.col-texto h4 {
+    color: #1e293b;
+}
+
 .col-texto p {
     font-size: 1rem;
     color: #334155;

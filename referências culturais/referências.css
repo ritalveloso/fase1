@@ -90,7 +90,10 @@ body {
     font-size: 1.35rem;
     font-weight: 700;
     color: #1e293b;
-    
+}
+
+.col-texto h4 {
+    color: #1e293b;
 }
 
 .col-texto p {
@@ -114,7 +117,7 @@ body {
 }
 
 .cartao-imagem img {
-    width: 50%;
+    width: 60%;
     height: auto;
     object-fit: cover;
     display: block;

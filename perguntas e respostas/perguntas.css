@@ -100,7 +100,6 @@ body {
     display: block;
 }
 
-/* Contentor geral */
 .faq-container {
   display: flex;
   flex-direction: column;
@@ -110,15 +109,13 @@ body {
   margin: 20px 0;
 }
 
-/* Caixa com borda grossa e cantos arredondados */
 .item-acordeao {
-  background-color: #ffffff;
+  background-color: #f1f5f9;
   border: 3px solid #0f172a;
   border-radius: 8px;
   overflow: hidden;
 }
 
-/* Linha da pergunta clicável */
 .pergunta {
   display: flex;
   justify-content: space-between;
@@ -129,32 +126,23 @@ body {
   color: #0f172a;
   cursor: pointer;
   user-select: none;
-  list-style: none; /* Remove marcador nativo */
+  list-style: none;
 }
 
-/* Remove triângulo cinzento nativo no Chrome/Safari */
-.pergunta::-webkit-details-marker {
-  display: none;
-}
-
-/* Ícone da seta e animação de rotação */
 .icone-seta {
   font-size: 0.85rem;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
 }
 
-/* Quando aberto, a seta vira 180° para cima */
 .item-acordeao[open] .icone-seta {
   transform: rotate(180deg);
 }
 
-/* Linha separadora discreta quando aberto */
 .item-acordeao[open] .pergunta {
   border-bottom: 2px solid #e2e8f0;
 }
 
-/* Efeito de arrasto/deslize suave para baixo usando CSS Grid */
 .resposta-wrapper {
   display: grid;
   grid-template-rows: 0fr;
@@ -165,7 +153,6 @@ body {
   grid-template-rows: 1fr;
 }
 
-/* Contentor interno do texto */
 .conteudo-resposta {
   overflow: hidden;
 }
